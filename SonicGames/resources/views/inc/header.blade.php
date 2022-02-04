@@ -44,7 +44,7 @@
 
                         </li>
                         <li class="nav-item">
-                            <a class="btn btn-primary rounded-pill me-3  header_button" href="/profile" role="button">Профиль</a>
+                            <a class="btn btn-primary rounded-pill me-3  header_button" href="{{ route('user',Auth::user()->id)}}" role="button">Профиль</a>
                            </ul>
                             </div>
 
