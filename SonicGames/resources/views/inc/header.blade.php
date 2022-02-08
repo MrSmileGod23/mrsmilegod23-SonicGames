@@ -10,7 +10,7 @@
                 <!-- Left Side Of Navbar -->
                 <ul class="navbar-nav me-auto align-items-start  align-items-xxl-center">
                     <a class="navbar-brand me-3 pb-0 mb-3 mb-xxl-0 mt-3 mt-xxl-0" href="{{ route('all-data') }}">
-                        <img src="../../img/logo.png" alt="" width="70">
+                        <img src="/img/logo.png" alt="" width="70">
                         SonicGames
                     </a>
                     <a class="btn btn-primary rounded-pill me-3 mb-3 mb-xxl-0  header_button shadowbutton" href="/catalog" role="button">Каталог</a>
@@ -39,7 +39,7 @@
 
                         <li class="nav-item mb-3 mb-xxl-0">
                             <a class="navbar-brand pb-0 pt-0 " href="/">
-                                  <img src="../../img/cart.png" alt="cart" width="50">
+                                  <img src="/img/cart.png" alt="cart" width="50">
                             </a>
 
                         </li>

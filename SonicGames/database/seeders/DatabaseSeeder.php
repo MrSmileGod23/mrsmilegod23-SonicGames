@@ -26,101 +26,101 @@ class DatabaseSeeder extends Seeder
         DB::table('genres')->insert([
             [
                 'name' => 'Action',
-                'slug' => 'genre-Action',
+                'slug' => 'Action',
             ],
             [
                 'name' => 'Adventure',
-                'slug' => 'genre-Adventure',
+                'slug' => 'Adventure',
             ],
             [
                 'name' => 'Fighting',
-                'slug' => 'genre-Fighting',
+                'slug' => 'Fighting',
             ],
             [
                 'name' => 'Platform',
-                'slug' => 'genre-Platform',
+                'slug' => 'Platform',
             ],
             [
                 'name' => 'Puzzle',
-                'slug' => 'genre-Puzzle',
+                'slug' => 'Puzzle',
             ],
             [
                 'name' => 'Racing',
-                'slug' => 'genre-Racing',
+                'slug' => 'Racing',
             ],
             [
                 'name' => 'RPG',
-                'slug' => 'genre-RPG',
+                'slug' => 'RPG',
             ],
             [
                 'name' => 'Action RPG',
-                'slug' => 'genre-ActionRPG',
+                'slug' => 'ActionRPG',
             ],
             [
                 'name' => 'Sports',
-                'slug' => 'genre-Sports',
+                'slug' => 'Sports',
             ],
             [
                 'name' => 'Strategy',
-                'slug' => 'genre-Strategy',
+                'slug' => 'Strategy',
             ],
             [
                 'name' => 'Simulator',
-                'slug' => 'genre-Simulator',
+                'slug' => 'Simulator',
             ]
         ]);
         DB::table('publishers')->insert([
             [
                 'name' => 'Electronic Arts',
-                'slug' => 'publisher-ElectronicArts',
+                'slug' => 'ElectronicArts',
             ],
             [
                 'name' => 'Mihoyo',
-                'slug' => 'publisher-Mihoyo',
+                'slug' => 'Mihoyo',
             ],
             [
                 'name' => 'Rockstar Games',
-                'slug' => 'publisher-Rockstar',
+                'slug' => 'Rockstar',
             ],
             [
                 'name' => 'Ubisoft Entertainment',
-                'slug' => 'publisher-Ubisoft',
+                'slug' => 'Ubisoft',
             ],
             [
                 'name' => 'Bethesda Softworks',
-                'slug' => 'publisher-Bethesda',
+                'slug' => 'Bethesda',
             ],
             [
                 'name' => 'CD Projekt RED',
-                'slug' => 'publisher-CDProjektRED',
+                'slug' => 'CDProjektRED',
             ],
             [
                 'name' => 'Bandai Namco Entertainment',
-                'slug' => 'publisher-BandaiNamcoEntertainment',
+                'slug' => 'BandaiNamcoEntertainment',
             ],
             [
                 'name' => 'Activision',
-                'slug' => 'publisher-Activision',
+                'slug' => 'Activision',
             ],
             [
                 'name' => 'Square Enix',
-                'slug' => 'publisher-SquareEnix',
+                'slug' => 'SquareEnix',
             ],
             [
                 'name' => 'Capcom',
-                'slug' => 'publisher-Capcom',
+                'slug' => 'Capcom',
             ],
             [
                 'name' => 'Sega',
-                'slug' => 'publisher-Sega',
+                'slug' => 'Sega',
             ],
             [
                 'name' => '505 Games',
-                'slug' => 'publisher-505Games',
+                'slug' => '505Games',
             ],
             [
                 'name' => 'Blizzard Entertainment',
-                'slug' => 'publisher-BlizzardEntertainment',
+                'slug' => 'BlizzardEntertainment',
             ],
         ]);
     }
