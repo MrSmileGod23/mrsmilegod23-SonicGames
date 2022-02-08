@@ -13,10 +13,10 @@
                         <img src="../../img/logo.png" alt="" width="70">
                         SonicGames
                     </a>
-                    <a class="btn btn-primary rounded-pill me-3 mb-3 mb-xxl-0  header_button" href="/catalog" role="button">Каталог</a>
-                    <a class="btn btn-primary rounded-pill me-3 mb-3 mb-xxl-0 header_button" href="/stocks" role="button">Акции</a>
-                    <a class="btn btn-primary rounded-pill me-3 mb-3 mb-xxl-0 header_button" href="/preorder" role="button">Предзаказ</a>
-                    <a class="btn btn-primary rounded-pill me-3 mb-3 mb-xxl-0 header_button" href="/about" role="button">О нас</a>
+                    <a class="btn btn-primary rounded-pill me-3 mb-3 mb-xxl-0  header_button shadowbutton" href="/catalog" role="button">Каталог</a>
+                    <a class="btn btn-primary rounded-pill me-3 mb-3 mb-xxl-0 header_button shadowbutton" href="/stocks" role="button">Акции</a>
+                    <a class="btn btn-primary rounded-pill me-3 mb-3 mb-xxl-0 header_button shadowbutton" href="/preorder" role="button">Предзаказ</a>
+                    <a class="btn btn-primary rounded-pill me-3 mb-3 mb-xxl-0 header_button shadowbutton" href="/about" role="button">О нас</a>
                 </ul>
 
                 <!-- Right Side Of Navbar -->
@@ -26,7 +26,7 @@
                     @guest
                         @if (Route::has('login'))
                             <li class="nav-item">
-                                <a class="btn btn-primary rounded-pill me-3 header_button" href="{{ route('login') }}" role="button">Войти</a>
+                                <a class="btn btn-primary rounded-pill me-3 header_button shadowbutton" href="{{ route('login') }}" role="button">Войти</a>
                             </li>
                         @endif
 
@@ -44,7 +44,7 @@
 
                         </li>
                         <li class="nav-item">
-                            <a class="btn btn-primary rounded-pill me-3  header_button" href="{{ route('user',Auth::user()->id)}}" role="button">Профиль</a>
+                            <a class="btn btn-primary rounded-pill me-3  header_button shadowbutton" href="{{ route('user',Auth::user()->id)}}" role="button">Профиль</a>
                            </ul>
                             </div>
 

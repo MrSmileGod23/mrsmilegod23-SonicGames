@@ -59,8 +59,8 @@
                             <p class="card-title w-100 text-center fs-4">{{ $el->name }}</p>
                             <p class="card-text  text-center">{{ $el->price }} руб</p>
                             </div>
-                            <div >
-                               <button class="btn btn-primary text-center" >Подробней</button>
+                            <div>
+                                <a href="{{route('getGame',[$el->publisher['slug'],$el->genre['slug'],$el->slug])}}" class=" btn btn-primary text-center">Подробней</a>
                             </div>
                         </div>
                     </div>
