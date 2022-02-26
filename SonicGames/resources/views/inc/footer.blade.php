@@ -9,8 +9,8 @@
                 <li class="nav-item"><a href="/stocks" class="nav-link px-2 text-black">Акции</a></li>
             </ul>
             <ul class="nav col-xl-3  d-flex flex-column">
-                <li class="nav-item "><a href="/" class="nav-link px-2 text-black">Предзаказ</a></li>
-                <li class="nav-item"><a href="/catalog" class="nav-link px-2 text-black">О нас</a></li>
+                <li class="nav-item "><a href="/preorder" class="nav-link px-2 text-black">Предзаказ</a></li>
+                <li class="nav-item"><a href="/about" class="nav-link px-2 text-black">О нас</a></li>
             </ul>
             </div>
         </footer>

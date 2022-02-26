@@ -49,7 +49,7 @@
 
                         <div class="row mb-4">
                             <div class="col-md-6 offset-md-3">
-                                <a class="link-dark" href="{{ route('register') }}">Нету аккаунта?</a>
+                                <a class="link-dark" href="{{ route('register') }}">Don't have account?</a>
                             </div>
                             </div>
 
