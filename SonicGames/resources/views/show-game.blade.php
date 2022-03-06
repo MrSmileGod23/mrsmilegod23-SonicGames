@@ -17,9 +17,20 @@
                 <p class="row">Издатель: {{ $data->publisher['name'] }}</p>
                 <p class="row">Платформа: {{ $data->platform }}</p>
                 <p class="row">Дата релиза: {{ $data->release }}</p>
-                <p class="row">Кол-во ключей{{ $data->amount }}</p>
+                @if($data->amount>2000)
+                    <p class="row d-inline-block">Кол-во ключей:<span class="text-success">Много</span></p>
+                @endif
+                @if($data->amount>1000 && $data->amount<2000)
+                    <p class="row d-inline-block">Кол-во ключей:<span class="text-info">Нормально</span></p>
+                @endif
+                @if($data->amount<1000)
+                    <p class="row d-inline-block">Кол-во ключей:<span class="text-danger">Мало</span></p>
+                @endif
                 <p class="row">{{ $data->info }}</p>
-                <p class="row">Цена: {{ $data->price }} руб.</p>
+                <p class="row">Цена: {{ $data->price- $data->discount }} руб.</p>
+                @if($data->discount!=null)
+                    <p class="row">Скидка:{{ $data->discount}} руб</p>
+                @endif
             </div>
         </div>
     </div>

@@ -51,13 +51,16 @@
             <div class="card mb-3 mt-5 flex-row shadowmy border-0" style="max-width: 560px;border-radius:20px;min-height:260px" >
                 <div class="row g-0">
                     <div class="col-xxl-5">
-                        <img src="../img/slider3.jpg" class="img-fluid" alt="Картинка из игры {{ $el->name }} " style="border-radius:20px 0px 0px 20px;height: 100%;background-size: cover;  object-fit: cover;object-position: center">
+                        <img src="../img/{{ $el->img }}" class="img-fluid" alt="Картинка из игры {{ $el->name }} " style="border-radius:20px 0px 0px 20px;height: 100%;background-size: cover;  object-fit: cover;object-position: center">
                     </div>
                     <div class="col-xxl-7 ">
                         <div class="d-flex flex-column justify-content-around h-100 align-items-center">
                             <div >
                             <p class="card-title w-100 text-center fs-4">{{ $el->name }}</p>
-                            <p class="card-text  text-center">{{ $el->price }} руб</p>
+                            <p class="card-text  text-center">{{ $el->price - $el->discount}} руб</p>
+                                @if($el->discount!=null)
+                                    <p class="card-text  text-center">Скидка:{{ $el->discount}} руб</p>
+                                @endif
                             </div>
                             <div>
                                 <a href="{{route('getGame',[$el->publisher['slug'],$el->genre['slug'],$el->slug])}}" class=" btn btn-primary text-center">Подробней</a>

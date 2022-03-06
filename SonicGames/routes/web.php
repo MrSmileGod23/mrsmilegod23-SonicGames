@@ -7,7 +7,9 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/',[ProductController::class,'allData'])->name('all-data');
 Route::get('/game/{slug_publisher}/{slug_genre}/{slug_game}',[ProductController::class,'getGame'])->name('getGame');
-Route::get('/about', function () {return view('about');});
+Route::get('/preorder',[ProductController::class,'getPreOrder'])->name('preorder');
+Route::get('/stocks',[ProductController::class,'getStocks'])->name('stocks');
+Route::get('/about', function () {return view('about');})->name('about');
 
 Auth::routes();
 

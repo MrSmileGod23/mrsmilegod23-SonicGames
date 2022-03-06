@@ -20,4 +20,25 @@ class ProductController extends Controller
             'data' => $data
         ]);
     }
+
+    public function getPreOrder()
+    {
+        $ldate = date('Y-m-d');
+
+        $data = Product::where('release','>',$ldate)->inRandomOrder()->paginate(4);
+        return view('preorder',[
+            'data' => $data
+        ]);
+    }
+
+    public function getStocks()
+    {
+        $data = Product::where('discount','>',0)->inRandomOrder()->limit(3)->get();
+        $dataMin = Product::orderBy('price','asc')->orderBy('discount','desc')->inRandomOrder()->limit(6)->get();
+        return view('stocks',[
+            'data' => $data,
+            'dataMin' => $dataMin
+
+        ]);
+    }
 }

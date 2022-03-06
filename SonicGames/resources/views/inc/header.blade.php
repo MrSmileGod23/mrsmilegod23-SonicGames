@@ -14,9 +14,9 @@
                         SonicGames
                     </a>
                     <a class="btn btn-primary rounded-pill me-3 mb-3 mb-xxl-0  header_button shadowbutton" href="/catalog" role="button">Каталог</a>
-                    <a class="btn btn-primary rounded-pill me-3 mb-3 mb-xxl-0 header_button shadowbutton" href="/stocks" role="button">Акции</a>
-                    <a class="btn btn-primary rounded-pill me-3 mb-3 mb-xxl-0 header_button shadowbutton" href="/preorder" role="button">Предзаказ</a>
-                    <a class="btn btn-primary rounded-pill me-3 mb-3 mb-xxl-0 header_button shadowbutton" href="/about" role="button">О нас</a>
+                    <a class="btn btn-primary rounded-pill me-3 mb-3 mb-xxl-0 header_button shadowbutton" href="{{ route('stocks') }}" role="button">Акции</a>
+                    <a class="btn btn-primary rounded-pill me-3 mb-3 mb-xxl-0 header_button shadowbutton" href="{{ route('preorder') }}" role="button">Предзаказ</a>
+                    <a class="btn btn-primary rounded-pill me-3 mb-3 mb-xxl-0 header_button shadowbutton" href="{{ route('about') }}" role="button">О нас</a>
                 </ul>
 
                 <!-- Right Side Of Navbar -->
