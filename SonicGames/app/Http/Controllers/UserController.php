@@ -12,6 +12,12 @@ class UserController extends Controller
 {
     public function user($id)
     {
-        return view('profile',['data'=>User::all()->find($id)],['dataOrder'=>Order::all()->find($id)->paginate(5)]);
+//        return view('profile',['data'=>User::all()->find($id)],['dataOrder'=>Order::all()->find($id)]);
+        $data= User::all()->find($id);
+        $dataOrder = Order::where('user_id',$id)->paginate(4);
+        return view('profile',[
+            'data' => $data,
+            'dataOrder' => $dataOrder
+        ]);
     }
 }

@@ -5,7 +5,7 @@
             <div class="d-flex col-6 justify-content-center justify-content-xxl-end">
             <ul class="nav col-xl-3 d-flex flex-column">
                 <li class="nav-item "><a href="/" class="nav-link px-2 text-black">Главная</a></li>
-                <li class="nav-item"><a href="/catalog" class="nav-link px-2 text-black">Каталог</a></li>
+                <li class="nav-item"><a href="{{ route('catalog') }}" class="nav-link px-2 text-black">Каталог</a></li>
                 <li class="nav-item"><a href="{{ route('stocks') }}" class="nav-link px-2 text-black">Акции</a></li>
             </ul>
             <ul class="nav col-xl-3  d-flex flex-column">
